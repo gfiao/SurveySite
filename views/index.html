@@ -16,15 +16,20 @@
 <div class="container">
 
     <h1>Vídeos gerados pela nossa ferramenta</h1>
-    <p>Nesta página poderá ver três vídeos gerados pela nossa ferramenta. Pedimos que ao acabar de ver cada um dos
-        videos,
-        faça o respectivo questionário.</p>
+    <p>Nesta página poderá ver três vídeos gerados pela nossa ferramenta. Verá também o sumário feito pela RTP de modo a
+        ser comparado ao nosso vídeo.
+        Pedimos que ao acabar de ver cada um dos videos, faça o respectivo questionário.
+        Inicialmente apenas um vídeo aparece na página, quando acabar de fazer o respectivo questionário, o vídeo
+        seguinte aparecerá.</p>
 
     <p>Muito obrigado pela vossa colaboração!</p>
 
-    <div class="row" style="padding-top: 3%; align-content: center;">
+    <!--====================================================-->
 
-        <h2>Video 1:</h2>
+    <div id="video1" class="row" style="padding-top: 3%; align-content: center;">
+
+        <h2>Vídeo de Close-ups</h2>
+        <p>Este vídeo mostra planos próximos (close-up) do jogo.</p>
 
         <div class="col-md-6">
             <div id="player1">
@@ -34,24 +39,25 @@
         <script type='text/javascript'>
             var player = jwplayer("player1");
             player.setup({
-                "file": "http://content.jwplatform.com/videos/2x93pYEy-ggxCNxmE.mp4",
+                "file": "http://content.jwplatform.com/videos/Fdxqt0EY-ggxCNxmE.mp4",
                 "width": 896,
                 "height": 504
             });
         </script>
 
         <div class="col-md-6" style="padding-left: 35%; padding-top: 18%;">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePQ0ZTXszh4uSSleVhVtulW2uJrJkyJKVkU9w3FIDXVb-svg/viewform"
+            <a id="button1" href="https://docs.google.com/forms/d/e/1FAIpQLSfg0SlLoz7eCtUh8FlgP7d2XKBnluONbTulPnSQduw_oWJOMQ/viewform"
                type="button" class="btn btn-default" target="_blank">Faça o questionário!</a>
         </div>
 
     </div>
 
-    <!--====================================================-->
+    <!--==================================================================-->
 
-    <div class="row" style="padding-top: 3%; align-content: center;">
+    <div id="video2" class="row" style="padding-top: 3%; align-content: center;">
 
-        <h2>Video 2:</h2>
+        <h2>Vídeo de Ataques de Portugal</h2>
+        <p>Este vídeo contém ataques de Portugal.</p>
 
         <div class="col-md-6">
             <div id="player2">
@@ -61,14 +67,14 @@
         <script type='text/javascript'>
             var player = jwplayer("player2");
             player.setup({
-                "file": "http://content.jwplatform.com/videos/xvUxlKdh-ggxCNxmE.mp4",
+                "file": "http://content.jwplatform.com/videos/vItOPAWw-ggxCNxmE.mp4",
                 "width": 896,
                 "height": 504
             });
         </script>
 
         <div class="col-md-6" style="padding-left: 35%; padding-top: 18%;">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePQ0ZTXszh4uSSleVhVtulW2uJrJkyJKVkU9w3FIDXVb-svg/viewform"
+            <a id="button2" href="https://docs.google.com/forms/d/e/1FAIpQLSfvM6xs_8bqO7HukSjWCK3gVg3-tZ-feMYLy4EaghNEz7ut6Q/viewform"
                type="button" class="btn btn-default" target="_blank">Faça o questionário!</a>
         </div>
 
@@ -76,9 +82,10 @@
 
     <!--==================================================================-->
 
-    <div class="row" style="padding-top: 3%; align-content: center;">
+    <div id="video3" class="row" style="padding-top: 3%; align-content: center;">
 
-        <h2>Video 3:</h2>
+        <h2>Sumário:</h2>
+        <p>Sumário do prolongamento do jogo, com as jogadas mais interessantes.</p>
 
         <div class="col-md-6">
             <div id="player3">
@@ -88,14 +95,42 @@
         <script type='text/javascript'>
             var player = jwplayer("player3");
             player.setup({
-                "file": "http://content.jwplatform.com/videos/zDu0OnIn-ggxCNxmE.mp4",
+                "file": "http://content.jwplatform.com/videos/ARIc9RRd-ggxCNxmE.mp4",
                 "width": 896,
                 "height": 504
             });
         </script>
 
         <div class="col-md-6" style="padding-left: 35%; padding-top: 18%;">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePQ0ZTXszh4uSSleVhVtulW2uJrJkyJKVkU9w3FIDXVb-svg/viewform"
+            <a id="button3" href="https://docs.google.com/forms/d/e/1FAIpQLSePQ0ZTXszh4uSSleVhVtulW2uJrJkyJKVkU9w3FIDXVb-svg/viewform"
+               type="button" class="btn btn-default" target="_blank">Faça o questionário!</a>
+        </div>
+
+    </div>
+
+    <!--==================================================================-->
+
+    <div id="video4" class="row" style="padding-top: 3%; align-content: center;">
+
+        <h2>RTP</h2>
+        <p>Sumário mostrado pela RTP no Telejornal a 11/07.</p>
+
+        <div class="col-md-6">
+            <div id="player4">
+            </div>
+        </div>
+
+        <script type='text/javascript'>
+            var player = jwplayer("player4");
+            player.setup({
+                "file": "http://content.jwplatform.com/videos/w8UUtAgg-5lZnuDeg.mp4",
+                "width": 896,
+                "height": 504
+            });
+        </script>
+
+        <div class="col-md-6" style="padding-left: 35%; padding-top: 18%;">
+            <a id="button4" href="https://docs.google.com/forms/d/e/1FAIpQLScDu3dRAGgVJDDnhkR9v2HpoBNwr2I1BAYfuvlBhoWiWatRJQ/viewform"
                type="button" class="btn btn-default" target="_blank">Faça o questionário!</a>
         </div>
 
@@ -114,5 +149,23 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+
+<script>
+
+    $( "#button1" ).click(function() {
+        $("#video2").css('display', 'inline');
+    });
+
+    $( "#button2" ).click(function() {
+        $("#video3").css('display', 'inline');
+    });
+
+    $( "#button3" ).click(function() {
+        $("#video4").css('display', 'inline');
+    });
+
+</script>
+
 </body>
 </html>

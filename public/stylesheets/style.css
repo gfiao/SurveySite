@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+#video2, #video3, #video4{
+  display: none;
+}
